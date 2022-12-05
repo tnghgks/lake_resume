@@ -3,7 +3,6 @@
 :root {
   --bg-color1: #f9f5ea;
   /* --bg-color1: #fff8eb; */
-  /* --accent-color: #D8c6bc; */
   --bg-color2: #fff;
   --tag-color: #7bc3e9;
   --text-color: #8fb15e;
@@ -155,6 +154,10 @@ a:visited {
 .strong-big {
   font-size: 24px;
   vertical-align: top;
+}
+.address-contact {
+  display: grid;
+  grid-template-columns: 70px 120px;
 }
 
 .list-skill {
