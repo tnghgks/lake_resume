@@ -136,6 +136,12 @@ a:visited {
 .article-intro span::before {
   content: "◾ ";
 }
+.demo-link {
+  color: #5b92e4;
+}
+.demo-link:visited {
+  color: #5b92e4;
+}
 .section-two {
   border-bottom: 2px solid var(--border-color);
 }
