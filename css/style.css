@@ -66,7 +66,7 @@ a:visited {
   overflow: hidden;
 }
 .wrapper > section {
-  padding: 30px 0px;
+  padding: 20px 0px;
   border-bottom: 2px solid var(--border-color);
 }
 .wrapper > section:last-child {
@@ -75,7 +75,7 @@ a:visited {
 .header {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  flex-basis: 50%;
   border-right: 2px solid var(--border-color);
 }
 
@@ -111,12 +111,12 @@ a:visited {
 
 .span-contact {
   display: block;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .article-intro {
   padding: 0px 20px;
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 
 .h2-intro {
@@ -128,10 +128,13 @@ a:visited {
 .article-intro p {
   margin-top: 10px;
   margin-bottom: 20px;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .article-intro strong {
   color: var(--accent-color);
+}
+.article-intro span {
+  font-weight: 700;
 }
 .article-intro span::before {
   content: "◾ ";
@@ -156,6 +159,24 @@ a:visited {
   grid-template-rows: 200px 200px;
   line-height: 24px;
 }
+.section-date div {
+  display: flex;
+  flex-direction: column;
+}
+.section-date img {
+  width: 14px;
+  height: 14px;
+}
+.icon-skill {
+  width: 80%;
+  font-size: 13px;
+  margin-top: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
 
 .section-project {
   display: grid;
@@ -168,7 +189,9 @@ a:visited {
 }
 .address-contact {
   display: grid;
-  grid-template-columns: 70px 150px;
+  grid-template-columns: 70px auto;
+  margin-top: 20px;
+  margin-right: 10px;
   gap: 8px;
 }
 
@@ -264,6 +287,9 @@ a:visited {
   }
   .div-project {
     padding-left: 10px;
+  }
+  .list-project {
+    margin-top: 10px;
   }
   .section-two section {
     grid-template-rows: 200px 200px;
